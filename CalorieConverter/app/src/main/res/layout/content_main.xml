@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ninatran.calorieconverter.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:clickable="false">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#39add1"
+        android:clickable="false" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/num"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:ellipsize="start" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/num"
+        android:layout_toEndOf="@+id/num"
+        android:layout_below="@+id/spinner"
+        android:orientation="horizontal"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reps"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@+id/num"
+        android:layout_centerHorizontal="true"
+        android:onClick="convert"
+        android:id="@+id/buttonConvert"
+        android:background="#39add1"
+        android:textColor="#fffefe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burned Calories"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textColor="#39add1"
+        android:layout_below="@+id/buttonConvert"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/pushup"
+        android:layout_below="@+id/txtOut"
+        android:layout_toStartOf="@+id/buttonConvert" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/situp"
+        android:layout_below="@+id/txtOut"
+        android:layout_toEndOf="@+id/buttonConvert" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/jp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignEnd="@+id/txtPushup" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/jogging"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/txtSitup"
+        android:layout_alignStart="@+id/txtSitup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtOut"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#e15258" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:id="@+id/txtPushup"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="0 "
+        android:id="@+id/txtSitup"
+        android:gravity="center"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:id="@+id/txtJump"
+        android:gravity="center"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:id="@+id/txtJogging"
+        android:gravity="center"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+</RelativeLayout>

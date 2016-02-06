@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calorie Converter</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="select_activity">
+        <item>Select an activity</item>
+        <item>Pushup</item>
+        <item>Situp</item>
+        <item>Jumping Jacks</item>
+        <item>Jogging</item>
+    </string-array>
+</resources>
