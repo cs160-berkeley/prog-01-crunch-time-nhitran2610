@@ -9,7 +9,7 @@ Nhi Tran ([nhitran2610@berkeley.edu](mailto:nhitran2610@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://www.youtube.com/watch?v=7Moxr_CStEs&feature=youtu.be)
+See [my demo video here] (https://www.youtube.com/watch?v=7Moxr_CStEs&feature=youtu.be)
 
 ## Screenshots
 
