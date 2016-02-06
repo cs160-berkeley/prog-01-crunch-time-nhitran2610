@@ -26,6 +26,6 @@ See [your demo video title here] (https://www.youtube.com/watch?v=7Moxr_CStEs&fe
 
 ## Acknowledgments
 
-* Spinner tool reference: http://www.mkyong.com/android/android-radio-buttons-example/
+* RadioGroup tool reference: http://www.mkyong.com/android/android-radio-buttons-example/
 * Color Code reference: https://teamtreehouse.com/library/build-a-simple-android-app-2014/creating-the-screen-layout/setting-colors
 
